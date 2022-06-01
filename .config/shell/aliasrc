@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Use neovim for vim if present
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+alias \
+    zconf='nvim ~/.config/zsh/.zshrc' \
+    ls='exa -a --group-directories-first --icons' \
+    lsa='exa -la --group-directories-first --icons' \
+    ytdl='yt-dlp' \
+    ytdlv='yt-dlp -f "(mp4)"' \
+    ytdlm='yt-dlp -f "(mp3)"' \
+    cl='clear' \
+    dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' \
+    fm='ranger' \
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+
+# Colorize commands when possible.
+alias \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ip="ip -color=auto"
+
+ec() {find  ~/.config -type f | fzf | xargs -r $EDITOR ;}
+es() {find  ~/.local/bin -type f | fzf | xargs -r $EDITOR ;}
+ef() {fzf | xargs -r -I % $EDITOR % ;}

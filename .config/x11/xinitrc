@@ -1,0 +1,13 @@
+#!/bin/sh
+
+slstatus &
+setwall &
+xcompmgr &
+dunst &
+sxhkd &
+# xmodmap ~/.config/xmodmap/Xmodmap &
+setxkbmap -option caps:swapescape
+# exec dwm > /dev/null 2>&1 
+
+while type dwm > /dev/null ; do dwm && continue || break ; done
+exec dwm
