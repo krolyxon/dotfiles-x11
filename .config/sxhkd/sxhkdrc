@@ -9,14 +9,18 @@ super + grave
 # swap cap if stops working
 super + c
     setxkbmap -option caps:swapescape
+
 # Screenshot tool
 Print
-	maimshot
+    maimshot
 
 # file explorer
 super + shift + f
         pcmanfm	
 
+# spotify
+super + shift + m
+        spot-adblock
 # web browser
 super + shift + b
         firefox

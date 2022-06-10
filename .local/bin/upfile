@@ -9,4 +9,4 @@ fi
 [ -z "$file" ] && exit
 
 curl -F"file=@$file" 0x0.st | xclip -sel c 
-notify-send "The url has been copied to your clipboard."
+notify-send "The url has been copied to your clipboard. $file"

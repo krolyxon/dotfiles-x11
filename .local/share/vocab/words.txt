@@ -65,3 +65,4 @@ derive -> obtain something from (a specified source)
 sceptical -> not easily convinced; having doubts or reservations
 psyched -> excited and full of anticipation
 faucet -> a tap, "nal" in hindi
+duress -> threats, violence, constrains, or other actions used to coerce someone into doing something against theri will or better judgement
