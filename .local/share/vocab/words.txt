@@ -69,3 +69,7 @@ duress -> threats, violence, constrains, or other actions used to coerce someone
 detriment -> the state of being harmed or damaged
 alleviate -> make (suffering, deficiency, or a problem) less severe
 sentient -> able to perceive or feel things
+contiguous -> sharing a common border; touching.
+concurrent -> operating or occuring at the same time
+vague -> of uncertain, indefinite, or unclear character or meaning
+concise -> giving a lot of information cleary and in a few words; brief but comprehensive
