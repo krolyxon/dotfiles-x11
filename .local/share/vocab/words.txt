@@ -73,3 +73,6 @@ contiguous -> sharing a common border; touching.
 concurrent -> operating or occuring at the same time
 vague -> of uncertain, indefinite, or unclear character or meaning
 concise -> giving a lot of information cleary and in a few words; brief but comprehensive
+lunatic -> a person who is mentally ill (not in technical use)
+deterrent -> a thing that discourages or is intended to discourage someone from doing sometihng
+omit -> leave out or exclude someone or something, either intentionally or forgetfully
