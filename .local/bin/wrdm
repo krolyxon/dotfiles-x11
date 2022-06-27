@@ -1,0 +1,6 @@
+#!/bin/sh
+
+word=$(dmenu -p "Enter Word: " <&-)
+#$BROWSER https://www.merriam-webster.com/dictionary/$word
+$BROWSER "https://www.google.com/search?hl=en&q=define+$word"
+
