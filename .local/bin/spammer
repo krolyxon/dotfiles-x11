@@ -2,8 +2,14 @@
 
 i=0
 
+if [ -z $1 ]; then
+  read -p "enter query: " query
+else 
+  query=$1
+fi
+
 while [ $i -le 100 ]
 do
-  xdotool type "$1" ;xdotool key KP_Enter; sleep 1 ;
+  xdotool type "$query" ;xdotool key KP_Enter; sleep 1 ;
  
 done
