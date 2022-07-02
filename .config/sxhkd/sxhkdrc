@@ -18,9 +18,6 @@ Print
 super + shift + f
         pcmanfm	
 
-# spotify
-super + shift + m
-        spot-adblock
 # web browser
 super + shift + b
         firefox
