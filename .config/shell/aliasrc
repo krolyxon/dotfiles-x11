@@ -13,6 +13,7 @@ alias \
     cl='clear' \
     dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' \
     lf="lfub" \
+    nb="newsboat" \
     hst='history 1 -1 | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c'
 
 # Verbosity and settings that you pretty much just always are going to want.
