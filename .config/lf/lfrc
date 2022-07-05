@@ -41,7 +41,7 @@ cmd extract ${{
 	printf "%s\n\t" "$fx"
 	printf "extract?[y/N]"
 	read ans
-	[ $ans = "y" ] && aunpack $fx
+	[ $ans = "y" ] && ext $fx
 }}
 
 cmd delete ${{
@@ -75,7 +75,7 @@ cmd copyto ${{
 	notify-send "📋 File(s) copied." "File(s) copies to $dest."
 }}
 
-cmd setbg "$1"
+cmd genwall "$1"
 cmd bulkrename $vidir
 
 # Bindings
@@ -102,7 +102,7 @@ map I push A<c-a> # at the very beginning
 map i push A<a-b><a-b><a-f> # before extension
 map a push A<a-b> # after extension
 map B bulkrename
-map b $setbg $f
+map b $genwall $f
 
 map <c-e> down
 map <c-y> up
