@@ -6,7 +6,6 @@ set icons
 set hidden true
 set drawbox true
 set period 1
-set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/scope'
 
@@ -79,8 +78,8 @@ map c push A<c-u> # new rename
 map I push A<c-a> # at the very beginning
 map i push A<a-b><a-b><a-f> # before extension
 map a push A<a-b> # after extension
-map B bulkrename
-map b $genwall $f
+map B $vimv
+map bg $genwall $f
 
 map <c-e> down
 map <c-y> up
