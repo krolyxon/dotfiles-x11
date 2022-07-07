@@ -96,4 +96,5 @@ map gp cd ~/pix
 map gc cd ~/.config
 map gr cd ~/code/repos
 map gv cd ~/vids/
+map gm cd ~/media/movies
 map gs cd ~/.local/bin
