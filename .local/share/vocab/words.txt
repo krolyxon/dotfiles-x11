@@ -77,3 +77,6 @@ lunatic -> a person who is mentally ill (not in technical use)
 deterrent -> a thing that discourages or is intended to discourage someone from doing sometihng
 omit -> leave out or exclude someone or something, either intentionally or forgetfully
 analogy -> a comparison between one thing and anotherm, typicall for the purpose of explanation or clarification
+contagious -> spread from one person or orgranism to another, typically by direct contact
+leconic -> a person who uses very few words
+petulant -> a person who is rude and acts childish
