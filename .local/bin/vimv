@@ -12,6 +12,8 @@ trap '{ rm -f "${FILENAMES_FILE}" ; }' EXIT
 if [ $# -ne 0 ]; then
     src=( "$@" )
 else
+    # in this line where is says src=($(ls)), you can change the "ls" to "exa"
+    # if you want the proper number sorting.
     IFS=$'\r\n' GLOBIGNORE='*' command eval 'src=($(ls))'
 fi
 
