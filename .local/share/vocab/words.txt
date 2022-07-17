@@ -12,7 +12,7 @@ fate -> a power that is believed to control what happens in the future
 established -> accepted or followed by many people
 compelled -> forced to do
 abundant -> existing or occuring in large ammounts
-bias -> a tendency to believe that some people,idias, etc are better than others useually results in treating some people unfairly
+bias -> a tendency to believe that some people,idias, etc are better than others usually results in treating some people unfairly
 desperate -> feeling or showing a hopeless sense taht a situation is so bad as to be impossible to deal with
 iteration -> the repetition of a process or utterance
 cope -> deal with something difficult
@@ -65,7 +65,7 @@ derive -> obtain something from (a specified source)
 sceptical -> not easily convinced; having doubts or reservations
 psyched -> excited and full of anticipation
 faucet -> a tap, "nal" in hindi
-duress -> threats, violence, constrains, or other actions used to coerce someone into doing something against theri will or better judgement
+duress -> threats, violence, constrains, or other actions used to coerce someone into doing something against their will or better judgement
 detriment -> the state of being harmed or damaged
 alleviate -> make (suffering, deficiency, or a problem) less severe
 sentient -> able to perceive or feel things
@@ -80,3 +80,6 @@ analogy -> a comparison between one thing and anotherm, typicall for the purpose
 contagious -> spread from one person or orgranism to another, typically by direct contact
 leconic -> a person who uses very few words
 petulant -> a person who is rude and acts childish
+monologue -> a long speech by one actor in a play or a film
+apprehension -> anziety or fear that something bad or unpleasant will happen
+reprise -> a repeated passage in music
