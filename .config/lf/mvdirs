@@ -1,3 +1,8 @@
+$HOME/.cache
+$HOME/.config
+$HOME
+$HOME/.local/bin
+$HOME/.local/src
 $HOME/dl
 $HOME/dox
 $HOME/music
