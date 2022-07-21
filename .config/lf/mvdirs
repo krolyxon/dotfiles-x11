@@ -3,6 +3,7 @@ $HOME/.config
 $HOME
 $HOME/.local/bin
 $HOME/.local/src
+$HOME/.local/share
 $HOME/dl
 $HOME/dox
 $HOME/music

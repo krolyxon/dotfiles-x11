@@ -108,4 +108,5 @@ map gr cd ~/code/repos
 map gv cd ~/vids/
 map gm cd ~/media/movies
 map gM cd ~/media
-map gs cd ~/.local/bin
+map gb cd ~/.local/bin
+map gs cd ~/.local/share

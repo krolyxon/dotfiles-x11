@@ -1,5 +1,6 @@
 ncmpcpp_directory = "~/.config/ncmpcpp"
 lyrics_directory = "~/.local/share/lyrics"
+lyrics_fetchers =  tekstowo, justsomelyrics, internet, musixmatch, genius, sing365, metrolyrics, jahlyrics, plyrics, zeneszoveg
 message_delay_time = "1"
 visualizer_type = "spectrum"
 song_list_format = {$4%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
