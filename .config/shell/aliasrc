@@ -5,8 +5,8 @@
 
 alias \
     zconf='nvim ~/.config/zsh/.zshrc' \
-    ls='exa -a --group-directories-first --icons' \
-    lsa='exa -la --group-directories-first --icons' \
+    ls='ls -a --group-directories-first --color=auto' \
+    lsa='ls -la --group-directories-first --color=auto' \
     ytdl='yt-dlp' \
     ytdlv='yt-dlp -f "(mp4)"' \
     ytdlm='yt-dlp -f "(mp3)"' \
