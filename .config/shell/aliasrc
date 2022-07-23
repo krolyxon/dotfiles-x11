@@ -4,23 +4,20 @@
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
 alias \
-    zconf='nvim ~/.config/zsh/.zshrc' \
-    ls='ls -a --group-directories-first --color=auto' \
-    lsa='ls -la --group-directories-first --color=auto' \
-    ytdl='yt-dlp' \
-    ytdlv='yt-dlp -f "(mp4)"' \
-    ytdlm='yt-dlp -f "(mp3)"' \
-    cl='clear' \
+    ls='ls -hN --group-directories-first --color=auto' \
+    lsa='ls -lahN --group-directories-first --color=auto' \
     dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' \
     lf="lfub" \
     nb="newsboat" \
-    hst='history 1 -1 | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c'
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
-	cp="cp -iv" \
-	mv="mv -iv" \
-	rm="rm -vI" \
+        cp="cp -iv" \
+        mv="mv -iv" \
+        rm="rm -vI" \
+        yt='yt-dlp --embed-metadata -i' \
+        yta='yt -x -f bestaudio/best' \
+
 
 # Colorize commands when possible.
 alias \
@@ -29,5 +26,5 @@ alias \
 	ip="ip -color=auto"
 
 ec() {find  ~/.config -type f | fzf | xargs -r $EDITOR ;}
-es() {find  ~/.local/bin -type f | fzf | xargs -r $EDITOR ;}
+se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 ef() {fzf | xargs -r -I % $EDITOR % ;}
