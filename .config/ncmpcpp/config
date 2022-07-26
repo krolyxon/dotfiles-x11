@@ -32,6 +32,9 @@ statusbar_color = red
 volume_color = "green"
 statusbar_time_color = cyan:b
 
+## Selected tracks ##
+selected_item_prefix = "* "
+
 ## Seeking ##
 incremental_seeking = "yes"
 seek_time = "1"
