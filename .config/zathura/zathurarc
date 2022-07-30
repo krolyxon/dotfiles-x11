@@ -1,1 +1,35 @@
-/home/krolyxon/.cache/wal/zathurarc
+set sandbox none
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set selection-clipboard clipboard
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+map p print
+
+set default-bg                     "#222222"
+set default-fg                     "#e5e8ea"
+set statusbar-bg                   "#224488"
+set statusbar-fg                   "#e5e8ea"
+set inputbar-bg                    "#224488"
+set inputbar-fg                    "#e5e8ea"
+set notification-bg                "#224488"
+set notification-fg                "#e5e8ea"
+set notification-error-bg          "#224488"
+set notification-error-fg          "#e5e8ea"
+set notification-warning-bg        "#224488"
+set notification-warning-fg        "#e5e8ea"
+set highlight-color                "#ff0000"
+set highlight-active-color         "#0000ee"
+set completion-bg                  "#ff0000"
+set completion-fg                  "#0000ee"
+set completion-highlight-bg        "#ff0000"
+set completion-highlight-fg        "#0000ee"
+set recolor-lightcolor             "#000000"
+set recolor-darkcolor              "#e5e8ea"
