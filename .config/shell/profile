@@ -26,7 +26,7 @@ export __GL_SHADER_DISK_CACHE_PATH=~/.cache/
 # Other program settings
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
-export ANDROID_HOME="$XDG_DATA_HOME"/android
+export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
 
