@@ -25,6 +25,13 @@ alias \
 	diff="diff --color=auto" \
 	ip="ip -color=auto"
 
+
+# git aliases
+alias \
+      ga='git add'
+      gc='git commit -sS'
+      gp='git push'
+
 ec() {find  ~/.config -type f | fzf | xargs -r $EDITOR ;}
 se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 ef() {fzf | xargs -r -I % $EDITOR % ;}
