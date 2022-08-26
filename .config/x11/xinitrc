@@ -1,6 +1,6 @@
 #!/bin/sh
 
-slstatus &
+sbar &
 #setwall &
 xwallpaper --zoom ~/.local/share/wallpaper.jpg
 xcompmgr &
