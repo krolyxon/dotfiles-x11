@@ -14,11 +14,7 @@ update_memory () {
 }
 
 update_time () { 
-	time="$(date "+[ %a %d %b ] [ %I:%M %P ]")" 
-}
-
-update_weather () { 
-	weather=" $(curl -s "wttr.in?format=1" | awk '{printf $2}')" 
+	time="$(date "+[   %a %d %b ] [   %I:%M %P ]")" 
 }
 
 # update_bat () { 
@@ -45,7 +41,7 @@ update_vol
 
 display () { 
 	#printf "%s\n" " $event [$weather] [$memory $cpu] [$bat] [$backlight] [$vol] $time "
-	xsetroot -name " [ $weather ] [ $memory  $cpu ] [ $vol ] $time "
+	xsetroot -name " [ $vol ] [ $memory  $cpu ] $time "
 }
 
 # SIGNALLING
@@ -65,7 +61,6 @@ do
 		[ $((sec % 5)) -eq 0 ] && update_cpu 	# update cpu every 15 seconds
 		[ $((sec % 15)) -eq 0 ] && update_memory
 		# [ $((sec % 60)) -eq 0 ] && update_bat
-		[ $((sec % 3600)) -eq 2 ] && update_weather 
 		#[ $((sec % 300)) -eq 1 ] && update_event
 
 		# how often the display updates ( 5 seconds )
