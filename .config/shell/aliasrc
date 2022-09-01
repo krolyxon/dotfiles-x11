@@ -28,8 +28,8 @@ alias \
 
 # git aliases
 alias \
-      ga='git add'
-      gc='git commit -sS'
+      ga='git add' \
+      gc='git commit' \
       gp='git push'
 
 ec() {find  ~/.config -type f | fzf | xargs -r $EDITOR ;}
