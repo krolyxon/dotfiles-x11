@@ -1,13 +1,10 @@
 #!/bin/sh
 
 #setwall &
-xwallpaper --zoom ~/.local/share/wallpaper.jpg
+xwallpaper --zoom ~/.local/share/wallpaper.jpg &
 xcompmgr &
 xset r rate 300 50
 sbar &
 dunst &
-sxhkd &
-# setxkbmap -option caps:swapescape
 # exec dwm > /dev/null 2>&1 
 while type dwm > /dev/null ; do dwm && continue || break ; done
-$exec dwm

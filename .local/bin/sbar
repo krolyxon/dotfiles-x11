@@ -17,6 +17,10 @@ update_time () {
 	time="$(date "+[   %a %d %b ] [   %I:%M %P ]")" 
 }
 
+update_music () {
+    music="[ $(sb-music) ] "
+}
+
 # update_bat () { 
 # 	# you might need to change the path depending on your device
 # 	read -r bat_status </sys/class/power_supply/BAT1/status
@@ -37,16 +41,17 @@ update_vol () {
 
 
 # modules that don't update on their own need to be run at the start for getting their initial value
-update_vol
+# update_vol
 
 display () { 
-	#printf "%s\n" " $event [$weather] [$memory $cpu] [$bat] [$backlight] [$vol] $time "
-	xsetroot -name " [ $vol ] [ $memory  $cpu ] $time "
+	#printf "%s\n" " $event [$memory $cpu] [$bat] [$backlight] [$vol] $time "
+	xsetroot -name "$music[ $vol ] [ $memory  $cpu ] $time "
 }
 
 # SIGNALLING
 # trap	"<function>;display"		"RTMIN+n"
 trap	"update_vol;display"		"RTMIN"
+trap	"update_music;display"		"RTMIN+10"
 # trap	"update_bat;display" 		"RTMIN+2"
 # to update it from external commands
 ## kill -m "$(cat ~/.cache/pidofbar)"
@@ -58,8 +63,10 @@ do
 		# to update item ever n seconds with a offset of m
 		## [ $((sec % n)) -eq m ] && udpate_item
 		[ $((sec % 5 )) -eq 0 ] && update_time 	# update time every 5 seconds
+		[ $((sec % 5 )) -eq 0 ] && update_vol # update vol every 5 seconds
+		[ $((sec % 5 )) -eq 0 ] && update_music # update music every 5 seconds
 		[ $((sec % 5)) -eq 0 ] && update_cpu 	# update cpu every 15 seconds
-		[ $((sec % 15)) -eq 0 ] && update_memory
+		[ $((sec % 5)) -eq 0 ] && update_memory
 		# [ $((sec % 60)) -eq 0 ] && update_bat
 		#[ $((sec % 300)) -eq 1 ] && update_event
 
