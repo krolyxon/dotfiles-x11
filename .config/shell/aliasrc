@@ -36,5 +36,5 @@ alias \
       gp='git push'
 
 ec() {find  ~/.config -type f | fzf | xargs -r $EDITOR ;}
-se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
+es() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 ef() {fzf | xargs -r -I % $EDITOR % ;}
