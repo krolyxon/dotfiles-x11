@@ -10,7 +10,7 @@ update_cpu () {
 }
 
 update_memory () { 
-	memory=" $(free -h | sed -n "2s/\([^ ]* *\)\{2\}\([^ ]*\).*/\2/p")"
+	memory=" $(free -h --si | sed -n "2s/\([^ ]* *\)\{2\}\([^ ]*\).*/\2/p")"
 }
 
 update_time () { 
