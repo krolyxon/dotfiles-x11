@@ -86,3 +86,5 @@ reprise -> a repeated passage in music
 reluctant -> unwilling and hesitant; disinclined
 trait -> a distinguishing quality or characteristic, typically one belonging to a person.
 pedantic -> excessively concerned with minor details or rules; overscrupulous.
+avid -> having or showing a keen interest in or enthusiasm for something
+eerie -> strange and frightening
