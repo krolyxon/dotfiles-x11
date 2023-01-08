@@ -8,6 +8,7 @@ set drawbox true
 set period 1
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/scope'
+set autoquit on
 
 # cmds/functions
 cmd open ${{
@@ -104,9 +105,11 @@ map gd cd ~/dox/
 map gD cd ~/dl/
 map gp cd ~/pix
 map gc cd ~/.config
+map gC cd ~/.cache
 map gr cd ~/code/repos
 map gv cd ~/vids/
 map gm cd ~/media/movies
 map gM cd ~/media
+map gn cd ~/music
 map gb cd ~/.local/bin
 map gs cd ~/.local/share
