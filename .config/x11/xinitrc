@@ -4,6 +4,7 @@
 xwallpaper --zoom ~/.local/share/wallpaper.jpg &
 xcompmgr &
 xset r rate 300 50
+unclutter &
 sbar &
 dunst &
 # exec dwm > /dev/null 2>&1 
