@@ -2,6 +2,7 @@
 
 export EDITOR="nvim"
 export TERMINAL="st"
+export TERMINAL_PROG="st"
 export BROWSER="librewolf"
 
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -27,8 +28,10 @@ export __GL_SHADER_DISK_CACHE_PATH=~/.cache/
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
+export _JAVA_AWT_WM_NONREPARENTING=1 # Fix for Java applications in dwm
+export MOZ_USE_XINPUT2="1" # Mozilla smooth scrolling/touchpads.
 export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:$HOME/.local/pbin # personal bin
+export PATH=$PATH:$HOME/.local/pbin # private bin
 export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
 
 export MPD_HOST="localhost"
