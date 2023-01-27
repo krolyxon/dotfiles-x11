@@ -18,7 +18,12 @@ update_time () {
 }
 
 update_music () {
-    music="[ $(sb-music) ] "
+    # music="[ $(sb-music) ] "
+    if [ -z "$(sb-music)" ]; then
+        music=""
+    else
+        music="[ $(sb-music) ]"
+    fi
 }
 
 # update_bat () { 
