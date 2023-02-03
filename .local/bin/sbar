@@ -22,7 +22,7 @@ update_music () {
     if [ -z "$(sb-music)" ]; then
         music=""
     else
-        music="[ $(sb-music) ]"
+        music="[ $(sb-music) ] "
     fi
 }
 

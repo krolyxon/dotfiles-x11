@@ -88,3 +88,6 @@ trait -> a distinguishing quality or characteristic, typically one belonging to 
 pedantic -> excessively concerned with minor details or rules; overscrupulous.
 avid -> having or showing a keen interest in or enthusiasm for something
 eerie -> strange and frightening
+prepend -> add (something) to the beginning of something else
+notion -> a conception of or belief about something
+robust -> strong and healthy

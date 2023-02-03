@@ -30,6 +30,8 @@ export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
 export _JAVA_AWT_WM_NONREPARENTING=1 # Fix for Java applications in dwm
 export MOZ_USE_XINPUT2="1" # Mozilla smooth scrolling/touchpads.
+export NPM_CONFIG_USERCONFIG="$HOME/.config/npm/npmrc"
+
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 # export PATH=$PATH:$HOME/.local/bin
