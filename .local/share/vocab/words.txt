@@ -91,3 +91,15 @@ eerie -> strange and frightening
 prepend -> add (something) to the beginning of something else
 notion -> a conception of or belief about something
 robust -> strong and healthy
+mundane -> 
+mundane -> lacking interest or excietement; dull.
+inevitable -> certain to happen; unavoidable.
+postulate -> suggest or assume the existence, fact, or truth of something as a basis for reasoning, discussion or belief.
+reasoning -> the action of thinking about something in a logical, sensible way.
+abstraction -> the quality of dealing with ideas rather than events.
+abstract -> existing in thought or as an idea but not having a physical or concrete existence
+elixir -> a magical or medicinal potion.
+ardent -> very enthusiastic or passionate.
+absolute -> existing independently and not in relation to other things
+reciprocal (mathematics) -> a multiplicative invers
+intuitive -> easy to use and understand.
