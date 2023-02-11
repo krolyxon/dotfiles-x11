@@ -9,18 +9,22 @@ alias \
     dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' \
     lf="lfub" \
     nb="newsboat" \
-    hst="history 1 -1 | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c" \ 
+    sxiv="nsxiv" \
+    hst="history 1 -1 | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c" \
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
         cp="cp -iv" \
         mv="mv -iv" \
         rm="rm -vI" \
-        yt="yt-dlp --embed-metadata -i -o '%(title)s.%(ext)s' --external-downloader=aria2c"   \
+        yt="yt-dlp --embed-metadata -i -o '%(title)s.%(ext)s'" \
         yta="yt -x -f bestaudio/best" \
         ytbdl="yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
-        ytdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c"
+        ytdl="yt-dlp -f best -o '%(title)s.%(ext)s' --external-downloader=aria2c" \
+        tsm="transmission-remote" \
+        tsmd="transmission-daemon"
 
+        # yt="yt-dlp --embed-metadata -i -o '%(title)s.%(ext)s' --external-downloader=aria2c"   \
 
 # Colorize commands when possible.
 alias \
