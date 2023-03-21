@@ -1,0 +1,2 @@
+#!/bin/sh
+echo [ "$([ "$(pamixer --get-mute)" = "false" ] && printf ' ' || printf ' ')$(pamixer --get-volume)%" ]

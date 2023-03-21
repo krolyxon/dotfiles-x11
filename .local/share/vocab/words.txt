@@ -91,7 +91,7 @@ eerie -> strange and frightening
 prepend -> add (something) to the beginning of something else
 notion -> a conception of or belief about something
 robust -> strong and healthy
-mundane -> 
+mundane ->
 mundane -> lacking interest or excietement; dull.
 inevitable -> certain to happen; unavoidable.
 postulate -> suggest or assume the existence, fact, or truth of something as a basis for reasoning, discussion or belief.
@@ -103,3 +103,13 @@ ardent -> very enthusiastic or passionate.
 absolute -> existing independently and not in relation to other things
 reciprocal (mathematics) -> a multiplicative invers
 intuitive -> easy to use and understand.
+ubiquitous -> found everywhere, present or appearing.
+poofta -> a man who is considered effiminate or homosexual
+camouflage -> it is the use of any combination of materials to either make objects hard to see or by disguising them as someting else.
+aisle -> a passage between rows of seats in a building such as a curch or theatre, an aircraft or train.
+ensemble -> a group of items viewed as a whole rather than individually.
+traverse -> travel across or through, "he traversed the forest"
+fiend -> an evil spirit or demon
+contiguous -> sharing a common border; touching.
+transgression -> an act that goes against a law, rule, or code of conduct.
+onosecond -> its the fraction of time before one realizes that they have made a crucial mistake after the mistake was made
