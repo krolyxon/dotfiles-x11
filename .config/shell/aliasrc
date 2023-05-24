@@ -5,7 +5,7 @@
 
 alias \
     ls='ls -hN --group-directories-first --color=auto' \
-    lsa='ls -lahN --group-directories-first --color=auto' \
+    lsa='ls -lAhN --group-directories-first --color=auto' \
     dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' \
     lf="lfub" \
     nb="newsboat" \

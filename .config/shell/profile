@@ -7,7 +7,7 @@ export BROWSER="librewolf"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
-ecport XDG_STATE_HOME="$HOME/.local/state"
+export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 export XAUTHORITY=/tmp/Xauthority # This causes other window managers to break, who cares anyways?
