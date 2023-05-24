@@ -8,7 +8,7 @@ set drawbox true
 set period 1
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/scope'
-set autoquit on
+set autoquit true
 
 # cmds/functions
 cmd open ${{
@@ -84,11 +84,11 @@ map X !$f
 map o &mimeopen $f
 map O $mimeopen --ask $f
 
-map A rename # at the very end
+map A :rename; cmd-end # at the very end
 map c push A<c-u> # new rename
-map I push A<c-a> # at the very beginning
-map i push A<a-b><a-b><a-f> # before extension
-map a push A<a-b> # after extension
+map I :rename; cmd-home # at the very beginning
+map i :rename # before extension
+map a :rename; cmd-right # after extension
 map br $vimv
 map bg $genwall $f
 
