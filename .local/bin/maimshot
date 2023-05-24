@@ -4,7 +4,7 @@ case "$(printf "a selected area (copy)\\ncurrent window (copy)\\nfull screen (co
 	"a selected area (copy)") maim -u -s | xclip -selection clipboard -t image/png ;;
 	"current window (copy)") maim -i "$(xdotool getactivewindow)" | xclip -selection clipboard -t image/png ;;
 	"full screen (copy)") sleep 0.2 ; maim | xclip -selection clipboard -t image/png ;;
-	"a selected area") maim -u -s ~/pix/ss/pic-selected-"$(date '+%y-%m-%d-%H-%M').png" ;;
-	"current window") maim -i "$(xdotool getactivewindow)" ~/pix/ss/pic-window-"$(date '+%y-%m-%d-%H-%M').png" ;;
-	"full screen") sleep 0.2 ; maim ~/pix/ss/pic-full-"$(date '+%y-%m-%d-%H-%M').png" ;;
+        "a selected area") maim -u -s ~/pix/ss/pic-selected-$(uuidgen | awk -F- '{printf $2}')-"$(date '+%y-%m-%d').png" ;;
+	"current window") maim -i "$(xdotool getactivewindow)" ~/pix/ss/pic-window-"$(uuidgen | awk -F- '{printf $2}')-$(date '+%y-%m-%d').png" ;;
+	"full screen") sleep 0.2 ; maim ~/pix/ss/pic-full-"$(uuidgen | awk -F- '{printf $2}')-$(date '+%y-%m-%d').png" ;;
 esac

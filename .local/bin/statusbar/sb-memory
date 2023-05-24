@@ -1,2 +1,4 @@
 #!/bin/sh
-echo "[  $(free --mebi | sed -n '2{p;q}' | awk '{printf ("%2.2fGiB", ( $3 / 1024), ($2 / 1024))}')  $(sensors | awk '/Core 0/ {print " " $3}') ]"
+# echo "[  $(free --mebi | sed -n '2{p;q}' | awk '{printf ("%2.2fGiB", ( $3 / 1024), ($2 / 1024))}')  $(sensors | awk '/Core 0/ {print " " $3}') ]"
+
+echo "[  $(free -h --si | sed -n "2s/\([^ ]* *\)\{2\}\([^ ]*\).*/\2/p")    $(grep -o "^[^ ]*" /proc/loadavg ) ]"

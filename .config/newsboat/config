@@ -27,7 +27,7 @@ bind-key L next-feed
 bind-key c toggle-show-read-feeds
 
 color background          default default
-color listnormal          cyan default
+color listnormal          white default
 color listfocus           black   yellow dim
 color listnormal_unread   blue default bold
 color listfocus_unread    black   yellow underline
