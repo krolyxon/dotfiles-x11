@@ -42,3 +42,13 @@ alias \
 ec() {find  ~/.config -type f | fzf | xargs -r $EDITOR ;}
 es() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 ef() {fzf | xargs -r -I % $EDITOR % ;}
+colors() {
+    for COLOR in {1..255}; do
+        echo -en "\e[38;5;${COLOR}m"
+        echo -n "${COLOR} "
+    done
+    echo
+}
+movie() {
+    mpv "$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)" | fzf)"
+}
