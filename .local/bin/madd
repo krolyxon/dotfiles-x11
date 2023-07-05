@@ -1,0 +1,20 @@
+#!/bin/sh
+
+madd() {
+    queue="$(mpc playlist)"
+    if [ -z "$queue" ]; then
+        mpc insert "$filename"
+        mpc play
+    else
+        mpc insert "$filename"
+        mpc next
+    fi
+}
+
+filename=$(mpc listall | dmenu -i -l 30)
+if [ -z "$filename" ]; then
+    notify-send "Nothing was selected. Skipping."
+else
+    madd
+fi
+
