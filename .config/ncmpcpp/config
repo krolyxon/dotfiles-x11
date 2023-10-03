@@ -12,7 +12,6 @@ current_item_inactive_column_prefix = $(magenta)$r
 current_item_inactive_column_suffix = $/r$(end)
 playlist_display_mode = columns
 browser_display_mode = columns
-progressbar_look = ->
 media_library_primary_tag = album_artist
 media_library_albums_split_by_date = no
 startup_screen = "media_library"
@@ -22,12 +21,15 @@ ignore_leading_the = yes
 external_editor = nvim
 use_console_editor = yes
 
+## Progress bar ##
+progressbar_look 			= "▂▂▂"
+progressbar_color = black:b
+progressbar_elapsed_color = blue:b
+
 ## Colors ##
 colors_enabled = "yes"
 empty_tag_color = magenta
 main_window_color = white
-progressbar_color = black:b
-progressbar_elapsed_color = blue:b
 statusbar_color = red
 volume_color = "green"
 statusbar_time_color = cyan:b

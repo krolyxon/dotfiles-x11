@@ -1,6 +1,9 @@
 #!/bin/sh
 
-word=$(dmenu -p "Enter Word: " <&-)
+# word=$(dmenu -p "Enter Word: " <&-)
+word=$(cat ~/.local/bin/words.txt | dmenu -l 25 -p "Choose Word: ")
 #$BROWSER https://www.merriam-webster.com/dictionary/$word
-$BROWSER "https://www.google.com/search?hl=en&q=define+$word"
+if [[ -n $word ]]; then
+    $BROWSER "https://www.google.com/search?hl=en&q=define+$word"
+fi
 

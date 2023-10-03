@@ -12,9 +12,7 @@ madd() {
 }
 
 filename=$(mpc listall | dmenu -i -l 30)
-if [ -z "$filename" ]; then
-    notify-send "Nothing was selected. Skipping."
-else
+if [ -n "$filename" ]; then
     madd
 fi
 

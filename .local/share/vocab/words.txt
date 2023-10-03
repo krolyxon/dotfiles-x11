@@ -128,3 +128,5 @@ polyglot -> knowing or using serveral langauges
 intrude -> to go into a place in which you are not wanted or not expected to be
 speculate -> form a theory or conjecture about a subjet without firm evidence.
 mediocre -> of only average quality; not very good.
+sober -> not affected by alcohol; not drunk.
+niche -> a comfortable or suitable position in life or employment
