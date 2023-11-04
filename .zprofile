@@ -1,1 +1,1 @@
-.config/shell/profile
+/home/krolyxon/.config/shell/profile
