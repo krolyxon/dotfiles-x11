@@ -49,8 +49,8 @@ colors() {
     done
     echo
 }
-movie() {
-    filename="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)" -printf "%f\n" | fzf)"
-    filepath="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)")"
-    mpv "$(grep "$filename" <<< "$filepath")"
-}
+# movie() {
+#     filename="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)" -printf "%f\n" | fzf)"
+#     filepath="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)")"
+#     mpv "$(grep "$filename" <<< "$filepath")"
+# }
