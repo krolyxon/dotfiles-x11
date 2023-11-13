@@ -11,7 +11,12 @@ madd() {
     fi
 }
 
-filename=$(mpc listall | dmenu -i -l 30)
+if [ -t 0 ]; then
+    filename=$(mpc listall | fzf)
+else
+    filename=$(mpc listall | dmenu -l 30)
+fi
+
 if [ -n "$filename" ]; then
     madd
 fi
