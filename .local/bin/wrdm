@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/env bash
 
 # word=$(dmenu -p "Enter Word: " <&-)
 word=$(cat ~/.local/bin/words.txt | dmenu -l 25 -p "Choose Word: ")
