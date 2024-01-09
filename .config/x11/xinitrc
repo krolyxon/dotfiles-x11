@@ -1,6 +1,13 @@
 #!/bin/sh
 
 #setwall &
+
+if [ $(envycontrol -q) = "nvidia" ]; then
+    xrandr --setprovideroutputsource modesetting NVIDIA-0
+    xrandr --auto
+    xrandr --dpi 96
+fi
+
 xwallpaper --zoom ~/.local/share/wallpaper2.jpg &
 xcompmgr &
 xset r rate 300 50
