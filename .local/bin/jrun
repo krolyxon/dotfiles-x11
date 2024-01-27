@@ -1,0 +1,6 @@
+#!/bin/env bash
+
+filename="${1%.*}"
+\cp -f "$1" /tmp/"$1"
+javac -d /tmp "$1"
+java -cp /tmp "$filename"
