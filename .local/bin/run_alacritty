@@ -4,7 +4,7 @@ hostname=$(hostnamectl hostname)
 
 # Run alacritty
 if [[ $hostname = 'pavilion' ]]; then
-    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/alacritty-pavilion.toml"
+    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/alacritty-pavilion.toml" $*
 elif [[ $hostname = 'arch' ]]; then
-    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/alacritty-desktop.toml"
+    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/alacritty-desktop.toml" $*
 fi
