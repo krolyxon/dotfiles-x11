@@ -25,6 +25,7 @@ export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 # export QT_QPA_PLATFORMTHEME="gtk2"	# Have QT use gtk2 theme.
 export __GL_SHADER_DISK_CACHE_PATH=~/.cache/
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
+export JUPYTER_PLATFORM_DIRS="$XDG_CONFIG_HOME/jupyter"
 
 # Other program settings
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
