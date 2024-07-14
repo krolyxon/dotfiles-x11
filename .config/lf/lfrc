@@ -100,6 +100,8 @@ map V push :!nvim<space>
 map W $setsid -f $TERMINAL >/dev/null 2>&1
 
 map Y $printf "%s" "$fx" | xclip -selection clipboard
+map T $nsxiv -t "$(pwd)" # opens thumbnail mode
+map <c-l> unselect
 
 # movement
 map gd cd ~/dox/
