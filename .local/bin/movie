@@ -2,9 +2,9 @@
 
 
 if [ -t 0 ]; then
-    filename="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)" -printf "%f\n" | fzf)"
+    filename="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)" -printf "%f\n" | sort | fzf)"
 else
-    filename="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)" -printf "%f\n" | dmenu -l 25)"
+    filename="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)" -printf "%f\n" | sort | dmenu -l 25)"
 fi
 
 filepath="$(find ~/movies/ -type f -regex ".*\.\(mkv\|mp4\|mpeg\|avi\|mov\|webm\)")"
