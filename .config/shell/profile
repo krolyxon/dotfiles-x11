@@ -31,9 +31,13 @@ export JUPYTER_PLATFORM_DIRS="$XDG_CONFIG_HOME/jupyter"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
+export ANDROID_HOME="$HOME/Android/Sdk/"
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 export _JAVA_AWT_WM_NONREPARENTING=1 # Fix for Java applications in dwm
 export MOZ_USE_XINPUT2="1" # Mozilla smooth scrolling/touchpads.
 export NPM_CONFIG_USERCONFIG="$HOME/.config/npm/npmrc"
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
