@@ -26,6 +26,8 @@ alias \
 
         # yt="yt-dlp --embed-metadata -i -o '%(title)s.%(ext)s' --external-downloader=aria2c"   \
 
+alias on="cd ~/dox/brain; nvim ."
+
 # Colorize commands when possible.
 alias \
 	grep="grep --color=auto" \
