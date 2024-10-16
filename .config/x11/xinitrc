@@ -18,6 +18,6 @@ unclutter &
 dwmblocks &
 dunst &
 backlight_control 20 &
-redshift -P -O 5000K
+redshift &
 # exec dwm > /dev/null 2>&1
 while type dwm > /dev/null ; do dwm && continue || break ; done
