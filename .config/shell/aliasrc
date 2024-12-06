@@ -26,7 +26,7 @@ alias \
 
         # yt="yt-dlp --embed-metadata -i -o '%(title)s.%(ext)s' --external-downloader=aria2c"   \
 
-alias on="cd ~/dox/brain; nvim ."
+alias on="tmux new-session -s notes -c ~/dox/brain"
 
 # Colorize commands when possible.
 alias \

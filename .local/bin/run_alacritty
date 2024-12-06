@@ -1,10 +1,8 @@
-#!/bin/sh
+#!/bin/env bash
 
-hostname=$(hostnamectl hostname)
-
-# Run alacritty
-if [[ $hostname = 'pavilion' ]]; then
-    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/alacritty-pavilion.toml" $*
-elif [[ $hostname = 'arch' ]]; then
-    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/alacritty-desktop.toml" $*
+mode=$(autorandr --current)
+if [[ $mode = 'hybrid' ]]; then
+    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/docked.toml" $*
+else
+    alacritty --config-file "$XDG_CONFIG_HOME/alacritty/normal.toml" $*
 fi
