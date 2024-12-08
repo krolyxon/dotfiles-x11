@@ -46,11 +46,5 @@ export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 export PATH=$PATH:$HOME/.local/pbin # private bin
 export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
 
-export MPD_HOST="localhost"
-export MPD_PORT="6600"
-
-# Mpd daemon start
-[ ! -s ~/.config/mpd/pid ] && mpd
-
 # Start graphical server on user's current tty if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"
