@@ -7,7 +7,7 @@ unbind-key H
 unbind-key L
 unbind-key c
 unbind-key ,
-browser "librewolf --private-window %u"
+browser "brave -incognito %u"
 
 # Feed settings
 prepopulate-query-feeds yes
