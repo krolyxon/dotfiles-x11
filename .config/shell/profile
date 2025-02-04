@@ -26,6 +26,7 @@ export MANPAGER='nvim +Man!'
 # export QT_QPA_PLATFORMTHEME="gtk2"	# Have QT use gtk2 theme.
 export __GL_SHADER_DISK_CACHE_PATH=~/.cache/
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
+export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
 export JUPYTER_PLATFORM_DIRS="$XDG_CONFIG_HOME/jupyter"
 export MYSQL_HISTFILE="$XDG_CACHE_HOME/.mariadb_history"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
