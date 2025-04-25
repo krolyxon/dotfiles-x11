@@ -109,6 +109,11 @@ key = "NumpadSubtract"
 mods = "Control"
 
 [[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
 action = "ClearLogNotice"
 key = "L"
 mods = "Control"
