@@ -40,7 +40,8 @@ alias \
 alias \
       ga='git add' \
       gc='git commit' \
-      gp='git push'
+      gp='git push' \
+      gC='git clone'
 
 ec() {find  ~/.config -type f | fzf | xargs -r $EDITOR ;}
 es() { cd ~/.local/bin; $EDITOR $(fzf) ;}
