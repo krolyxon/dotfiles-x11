@@ -10,7 +10,6 @@ current_item_prefix = $(cyan)$r$b
 current_item_suffix = $/r$(end)$/b
 current_item_inactive_column_prefix = $(magenta)$r
 current_item_inactive_column_suffix = $/r$(end)
-playlist_display_mode = columns
 browser_display_mode = columns
 media_library_primary_tag = album_artist
 media_library_albums_split_by_date = no
@@ -20,6 +19,10 @@ display_volume_level = yes
 ignore_leading_the = yes
 external_editor = nvim
 use_console_editor = yes
+
+## Playlist ##
+playlist_display_mode = columns
+ask_before_clearing_playlists = no
 
 ## Progress bar ##
 progressbar_look 			= "▂▂▂"
