@@ -1,0 +1,301 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrains Mono Nerd Font, FontAwesome;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    color: #e3e3e3;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border: none;
+    border-radius: 0;
+}
+
+/**************/
+/* Workspaces */
+/**************/
+
+#workspaces {
+    /* border-radius: 8px; */
+    padding: 0 3px 0 8px;
+    margin: 5px 5px 5px 0;
+    transition: all 0.2s ease;
+}
+
+/* non-empty workspaces */
+#workspaces button {
+    background-color: #2e3440;
+
+    border: none;
+    border-radius: 0;
+
+    color: #d8dee9;
+    transition: all 0.2s ease;
+    text-shadow: none;
+
+    /* center the icon, no clue why this is necessary */
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 1px;
+
+    box-shadow: inset 0 -2px #eceff4;
+}
+
+/* the first and last buttons should be rounded */
+#workspaces button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#workspaces button:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#workspaces button:hover {
+    transition-duration: .2s;
+    color: #2e3440;
+    box-shadow: inset 0 -3px #ffffff;
+    /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+    text-shadow: inherit;
+}
+
+/* non-empty persistent workspaces */
+#workspaces button.persistent {
+    background-color: #4c566a;
+}
+
+/* empty persistent workspaces */
+#workspaces button.empty {
+    background-color: #2e3440;
+    box-shadow: none;
+}
+
+/* active or visible workspaces */
+#workspaces button.active,
+#workspaces button.visible {
+    background-color: #4c566a;
+    /* box-shadow: inset 0 -4px #eceff4; */
+}
+
+#workspaces button.urgent {
+    color: #bf616a;
+}
+
+/**************/
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#custom-date,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#mpris,
+#custom-media,
+#tray,
+#custom-notification,
+#mpd {
+    background-color: #2e3440;
+    border-radius: 8px;
+    padding: 0 12px 0 12px;
+    margin: 5px 5px 5px 0;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    color: #eceff4;
+}
+
+#custom-date {
+    color: #b48ead;
+}
+
+#battery {
+    color: #ebcb8b;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #bf616a;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: black;
+}
+
+#cpu {
+    color: #bf616a;
+}
+
+#memory {
+    color: #a3be8c;
+}
+
+/* #disk {
+    background-color: #964B00;
+} */
+
+/* #backlight {
+    background-color: #90b1b1;
+} */
+
+#network {
+    color: #5e81ac;
+}
+
+#network.disconnected {
+    color: #81a1c1;
+}
+
+#network.linked {
+    color: #bf616a;
+}
+
+#pulseaudio {
+    color: #d8dee9;
+}
+
+#mpris,
+#custom-media {
+    background-color: #66cc99;
+    color: black;
+}
+
+#mpris.firefox,
+#custom-media.firefox {
+    background-color: #FF9500;
+    color: black;
+}
+
+#mpris.spotify,
+#custom-media.spotify {
+    background-color: #66cc99;
+    color: #191414;
+}
+
+#mpris.vlc,
+#custom-media.vlc {
+    background-color: #E85E00;
+    color: black;
+}
+
+#mpris.jellyfin,
+#custom-media.jellyfin {
+    /* https://jellyfin.org/docs/general/contributing/branding */
+    color: #000B25;
+    background-color: #AA5CC3;
+}
+
+
+
+#temperature {
+    color: #d08770;
+}
+
+#temperature.critical {
+    color: #bf616a;
+}
+
+#tray {
+    color: #eceff4;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #bf616a;
+}
+
+/* #idle_inhibitor {
+    background-color: #2d3436;
+} */
+
+/* #idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+} */
+
+/* #mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #bf616a;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+} */
+
+/* #language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+} */
+
+/* #keyboard-state {
+    background: #97e1ad;
+    color: black;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+} */
