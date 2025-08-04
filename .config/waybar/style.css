@@ -96,7 +96,7 @@ window#waybar.hidden {
 
 /* non-empty workspaces */
 #workspaces button {
-    background-color: #2e3440;
+    background-color: @base;
 
     border: none;
     border-radius: 0;
@@ -110,7 +110,7 @@ window#waybar.hidden {
     padding-right: 10px;
     padding-top: 1px;
 
-    box-shadow: inset 0 -2px #eceff4;
+    box-shadow: inset 0 -1px #e3e3e3;
 }
 
 /* the first and last buttons should be rounded */
@@ -125,8 +125,8 @@ window#waybar.hidden {
 
 #workspaces button:hover {
     transition-duration: .2s;
-    color: #2e3440;
-    box-shadow: inset 0 -3px #ffffff;
+    color: @base;
+    box-shadow: inset 0 -3px #e3e3e3;
     /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
     text-shadow: inherit;
 }
@@ -138,14 +138,16 @@ window#waybar.hidden {
 
 /* empty persistent workspaces */
 #workspaces button.empty {
-    background-color: #2e3440;
+    background-color: @base;
     box-shadow: none;
 }
 
 /* active or visible workspaces */
 #workspaces button.active,
 #workspaces button.visible {
-    background-color: #4c566a;
+    /* background-color: #4c566a; */
+    color: @crust;
+    background-color: #7da6ff;
     /* box-shadow: inset 0 -4px #eceff4; */
 }
 
@@ -163,20 +165,21 @@ window#waybar.hidden {
 #clock,
 #custom-date,
 #battery,
+#backlight,
 #cpu,
 #memory,
 #disk,
 #temperature,
-#backlight,
 #network,
 #pulseaudio,
 #wireplumber,
 #mpris,
 #custom-media,
 #tray,
+#window,
 #custom-notification,
 #mpd {
-    background-color: #2e3440;
+    background-color: @base;
     border-radius: 8px;
     padding: 0 12px 0 12px;
     margin: 5px 5px 5px 0;
@@ -192,6 +195,10 @@ window#waybar.hidden {
     margin-right: 0;
 }
 
+#window {
+    color: #e3e3e3
+}
+
 #clock {
     color: #eceff4;
 }
@@ -202,6 +209,10 @@ window#waybar.hidden {
 
 #battery {
     color: #ebcb8b;
+}
+
+#backlight {
+    color: @teal
 }
 
 @keyframes blink {
@@ -237,10 +248,6 @@ label:focus {
     background-color: #964B00;
 } */
 
-/* #backlight {
-    background-color: #90b1b1;
-} */
-
 #network {
     color: #5e81ac;
 }
@@ -257,38 +264,6 @@ label:focus {
     color: #d8dee9;
 }
 
-#mpris,
-#custom-media {
-    background-color: #66cc99;
-    color: black;
-}
-
-#mpris.firefox,
-#custom-media.firefox {
-    background-color: #FF9500;
-    color: black;
-}
-
-#mpris.spotify,
-#custom-media.spotify {
-    background-color: #66cc99;
-    color: #191414;
-}
-
-#mpris.vlc,
-#custom-media.vlc {
-    background-color: #E85E00;
-    color: black;
-}
-
-#mpris.jellyfin,
-#custom-media.jellyfin {
-    /* https://jellyfin.org/docs/general/contributing/branding */
-    color: #000B25;
-    background-color: #AA5CC3;
-}
-
-
 
 #temperature {
     color: #d08770;
@@ -300,6 +275,7 @@ label:focus {
 
 #tray {
     color: #eceff4;
+
 }
 
 #tray>.passive {
@@ -310,61 +286,3 @@ label:focus {
     -gtk-icon-effect: highlight;
     background-color: #bf616a;
 }
-
-/* #idle_inhibitor {
-    background-color: #2d3436;
-} */
-
-/* #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
-} */
-
-/* #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #bf616a;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-} */
-
-/* #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-} */
-
-/* #keyboard-state {
-    background: #97e1ad;
-    color: black;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-} */

@@ -11,16 +11,18 @@
         // "hyprland/window",
     ],
     "modules-center" : [
+        "hyprland/window"
     ],
     "modules-right": [
+        "tray",
         "pulseaudio",
         "battery",
+        "backlight",
         "cpu",
         "memory",
-        "network",
+        // "network",
         "custom/date",
         "clock",
-        "tray",
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -58,9 +60,12 @@
         "all-outputs": false,
         "show-special": false
     },
+    "hyprland/window": {
+        "format": "󰣇 {}"
+    },
     "tray": {
-        "icon-size": 21,
-        "spacing": 12
+        "icon-size": 13,
+        "spacing": 10
     },
     "clock": {
         "timezone": "Asia/Kolkata",
@@ -70,19 +75,20 @@
     },
     "custom/date": {
         "timezone": "Asia/Kolkata",
-        "exec": "date +'%a %Y-%m-%d'",
+        "exec": "date +'%a %d %b %Y'",
         "format": "󰃭 {}",
         "interval": 1,
         "tooltip": false
     },
     "cpu": {
         "format": " {usage:2}%",
-        "tooltip": false,
-        "interval": 1
+        "interval": 1,
+        "on-click": "$TERMINAL -e htop",
     },
     "memory": {
-        "format": " {:2}%",
-        "interval": 1
+        "format": " {used:0.1f}G",
+        "interval": 1,
+        "on-click": "$TERMINAL -e htop",
     },
     "network": {
         "interval": 5,
@@ -110,6 +116,14 @@
             "",
             ""
         ]
+    },
+    "backlight": {
+        // "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
     },
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
