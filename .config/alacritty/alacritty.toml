@@ -131,11 +131,6 @@ key = "Copy"
 
 [[keyboard.bindings]]
 action = "Quit"
-key = "Q"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "Quit"
 key = "W"
 mods = "Command"
 
