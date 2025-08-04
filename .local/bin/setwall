@@ -1,5 +1,0 @@
-#!/bin/sh
-xwallpaper --zoom ~/.local/share/bg.jpg
-wal -c
-wal -i ~/.local/share/bg.jpg
-xdotool key super+F5
