@@ -13,7 +13,6 @@
     "modules-center" : [
     ],
     "modules-right": [
-        "mpd",
         "pulseaudio",
         "battery",
         "cpu",
@@ -132,14 +131,5 @@
             ]
         },
         "on-click": "pavucontrol",
-    },
-    "mpd": {
-        "format": "Playing ",
-        "format-paused": "Paused ",
-        "format-stopped": "Stopped ",
-        "max-length": 20,
-        "tooltip": false,
-        "tooltip-format": "{title}\n{artist}\n{album}",
-        "tooltip": true
     },
 }
