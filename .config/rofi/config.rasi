@@ -189,6 +189,10 @@ prompt {
     spacing:    0;
     text-color: @normal-foreground;
 }
+configuration {
+    matching: "fuzzy";
+    case-sensitive: false;
+}
 textbox-prompt-colon {
     margin:     0px 0.3000em 0.0000em 0.0000em ;
     expand:     false;
