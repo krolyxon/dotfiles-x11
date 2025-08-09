@@ -85,6 +85,7 @@
         "exec": "~/.config/waybar/scripts/gpu_mode.sh",
         "format": "{}",
         "interval": "once",
+        "on-click": "~/.config/waybar/scripts/envyswitch.sh",
     },
     "cpu": {
         "format": " {usage:2}%",
