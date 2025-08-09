@@ -67,5 +67,3 @@ bindkey '^R' history-incremental-pattern-search-backward
 #loeading syntax highlighter and autosgguestions plugin. should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-cowsay "$(shuf -n 1 ~/.local/share/vocab/words.txt)"
