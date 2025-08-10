@@ -190,7 +190,7 @@ prompt {
     text-color: @normal-foreground;
 }
 configuration {
-    matching: "fuzzy";
+    // matching: "fuzzy";
     case-sensitive: false;
 }
 textbox-prompt-colon {
