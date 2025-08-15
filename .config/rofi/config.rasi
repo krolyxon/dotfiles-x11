@@ -112,8 +112,8 @@ element-icon {
 window {
     padding:          5;
     background-color: @background;
-    border:           0;
-    width: 100%;
+    border:           1;
+    // width: 100%;
 }
 mainbox {
     padding: 0;
@@ -190,11 +190,11 @@ prompt {
     text-color: @normal-foreground;
 }
 configuration {
-    // matching: "fuzzy";
+    matching: "fuzzy";
+    sort: true;
     case-sensitive: false;
-    location: 1;
-    yoffset: 0;
     font: "Fira Code 11";
+	  window-format:              "{w} · {c} · {t}";
 }
 textbox-prompt-colon {
     margin:     0px 0.3000em 0.0000em 0.0000em ;
